@@ -88,12 +88,15 @@ body {
   margin-bottom: 15px;
 }
 .storage-cards span {
+    display: inline-block;
   background-color: #eeeeee;
   color: black;
   border-radius: 5px;
   padding: 10px;
   margin-right: 20px;
   margin-left: 10px;
+  margin-bottom: 10px;
+
   transition: 0.5s all ease;
   cursor: pointer;
 }
@@ -104,6 +107,8 @@ body {
 }
 
 .cart-container {
+  /* margin-top: 10px; */
+
   width: 60%;
   display: flex;
   align-items: center;
@@ -150,7 +155,8 @@ body {
 
 @media (max-width: 1440px) {
   .container {
-    height: 50%;
+    height: unset;
+    padding: 2rem;
   }
   .img-container img {
     width: 55%;
@@ -173,13 +179,65 @@ body {
 }
 
 @media (max-width: 900px) {
-    .container {
-      flex-direction: column;
-      gap: 4rem;
+  .container {
+    flex-direction: column;
+    height: unset;
+    gap: 3rem;
+  }
+  .img-container img {
+    /* width: unset;
+      height: 80%; */
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .img-container img {
+    /* width: unset;
+      height: 80%; */
+    width: 80%;
+  }
+  .container {
+    gap: 1rem;
+  }
+  .content-container {
+    
+    gap: 1.8rem;
+  }
+  .cart-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    /* border: 1px solid red; */
+    gap: 1rem;
+    margin: auto;
+  }
+
+  .cart-container button{
+    /* width: 100%; */
+  margin-right: unset;
+
+  }
+  .title h1{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media (max-width: 390px) {
+   body{
+     margin-top: 150px;
+     margin-bottom: 150px;
     }
     .img-container img {
-        width: unset;
-      height: 80%;
+      /* width: unset;
+        height: 80%; */
+      /* width: 80%; */
+     /* margin-top: 200px; */
     }
+    
   }
   
